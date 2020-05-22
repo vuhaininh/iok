@@ -19,3 +19,11 @@ services:
       - "8000:8000"
     volumes: 
       - ./backend:/app/backend
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    volumes: 
+      - ./frontend:/app/frontend
+    command: npm start
+    stdin_open: true
