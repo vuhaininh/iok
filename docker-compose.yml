@@ -7,6 +7,8 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
     image: postgres
+    volumes:
+      - database:/var/lib/postgresql/data
   backend: 
     build: ./backend
     command: >
@@ -27,3 +29,6 @@ services:
       - ./frontend:/app/frontend
     command: npm start
     stdin_open: true
+
+volumes:
+    database:
