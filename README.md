@@ -8,7 +8,7 @@ docker-compose down
 ```
 # Test
 ```
-docker-compose run backend sh -c "python manage.py test && flake8"
+docker-compose run --rm backend sh -c "python manage.py test && flake8"
 ```
 # Create Django super user
 ```
