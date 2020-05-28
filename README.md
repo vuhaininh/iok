@@ -14,3 +14,7 @@ docker-compose run --rm backend sh -c "python manage.py test && flake8"
 ```
 docker-compose run --rm backend sh -c "python manage.py createsuperuser"
 ```
+# Create Django app
+```
+docker-compose run --rm backend sh -c "python manage.py startapp appname"
+```
