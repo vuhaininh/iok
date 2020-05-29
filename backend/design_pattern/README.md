@@ -1,3 +1,4 @@
+Design pattern is not a part of this web application. Its purpose is for practicing only
 # How to run client code of design pattern
 ```
 docker-compose run --rm backend sh -c "python manage.py migrate"
